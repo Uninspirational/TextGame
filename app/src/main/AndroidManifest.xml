@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helloworld.textgame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StartScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GetName" />
+        <activity android:name=".Adv1" />
+        <activity android:name=".Adv2" />
+        <activity android:name=".Adv3" />
+        <activity android:name=".Task1" />
+        <activity android:name=".Adv4" />
+        <activity android:name=".Fight1" />
+        <activity android:name=".Task1P2" />
+        <activity android:name=".Combat" />
+        <activity android:name=".Death" />
+        <activity android:name=".Adv5" />
+        <activity android:name=".Task2" />
+        <activity android:name=".Fight2" />
+        <activity android:name=".Task2P2" />
+        <activity android:name=".Adv6" />
+        <activity android:name=".Task2P3" />
+        <activity android:name=".Task2P4" />
+        <activity android:name=".AfterCombat" />
+        <activity android:name=".Adv7" />
+        <activity android:name=".Fight3" />
+        <activity android:name=".Fight4" />
+        <activity android:name=".Adv8" />
+        <activity android:name=".Adv9" />
+        <activity android:name=".Adv10" />
+        <activity android:name=".Adv11" />
+        <activity android:name=".Adv12" />
+        <activity android:name=".Adv13" />
+        <activity android:name=".Task3" />
+        <activity android:name=".Fight5" />
+        <activity android:name=".Fight6" />
+        <activity android:name=".Fight7" />
+        <activity android:name=".Fight8" />
+        <activity android:name=".Adv14" />
+        <activity android:name=".Task3P2" />
+        <activity android:name=".Adv15" />
+        <activity android:name=".Task4" />
+        <activity android:name=".Task3P3" />
+        <activity android:name=".Task4P2" />
+        <activity android:name=".Fight9" />
+        <activity android:name=".Adv16" />
+        <activity android:name=".Adv17" />
+        <activity android:name=".Adv18" />
+        <activity android:name=".Adv19" />
+        <activity android:name=".Fight10" />
+        <activity android:name=".Adv20" />
+        <activity android:name=".Adv21"></activity>
+    </application>
+
+</manifest>
