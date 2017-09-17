@@ -14,7 +14,7 @@ public class Fight6 extends AppCompatActivity {
         Strings.monsterName = "Three Dog Amalgamation";
         charstats.monsterhealth = 50;
         charstats.monsterattack = 5;
-        charstats.monsterdefense = 7;
+        charstats.monsterdefense = 4;
         charstats.monsterdexterity = 1;
         charstats.monsterbonus = 200;
         calculator.aftercombatscreen = 5;

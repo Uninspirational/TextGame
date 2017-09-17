@@ -15,7 +15,7 @@ public class Fight5 extends AppCompatActivity {
         Strings.monsterName = "Not Starving Wolf";
         charstats.monsterhealth = 20;
         charstats.monsterattack = 4;
-        charstats.monsterdefense = 5;
+        charstats.monsterdefense = 3;
         charstats.monsterdexterity = 3;
         charstats.monsterbonus = 120;
         calculator.aftercombatscreen = 4;

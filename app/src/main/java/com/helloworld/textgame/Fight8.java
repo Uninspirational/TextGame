@@ -14,7 +14,7 @@ public class Fight8 extends AppCompatActivity {
         Strings.monsterName = "Giant Koala";
         charstats.monsterhealth = 100;
         charstats.monsterattack = 3;
-        charstats.monsterdefense = 10;
+        charstats.monsterdefense = 6;
         charstats.monsterdexterity = 10;
         charstats.monsterbonus = 300;
         calculator.aftercombatscreen = 7;
