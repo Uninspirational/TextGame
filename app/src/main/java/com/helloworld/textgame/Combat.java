@@ -37,42 +37,6 @@ public class Combat extends AppCompatActivity {
 
         final calculator calc = new calculator();
 
-        if(charstats.finalboss) {
-            if(charstats.monsterhealth < 400) {
-                startActivity(new Intent(Combat.this, Adv16.class));
-                charstats.finalboss = false;
-            }
-            button1.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    // Attack
-                    int temp = calc.attackdamage(charstats.attack, 5);
-                    charstats.monsterhealth -= temp;
-                    Strings.Combatresult = ("" + "The " + Strings.monsterName + " took " + temp + " damage!\n");
-                    startActivity(new Intent(Combat.this, Combat.class));
-                }
-            });
-            button2.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    //Dodge
-                    Strings.Combatresult = ("You dodged but " + Strings.monsterName + " didn't attack! It's actually just sleepig!\n");
-                    startActivity(new Intent(Combat.this, Combat.class));
-                }
-            });
-            button3.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    //Defend
-                    int heal = calc.heal(charstats.defense);
-                    charstats.heal(heal);
-                    Strings.Combatresult = ("You defended but " + Strings.monsterName + " didn't attack!\n" +
-                            "You gained " + heal + " health for defending");
-                    startActivity(new Intent(Combat.this, Combat.class));
-                }
-            });
-            if(charstats.health <= 0) {
-                startActivity(new Intent(Combat.this, Death.class));
-            }
-
-        }
         if(charstats.monsterhealth <= 0) {
             charstats.upXP(charstats.monsterbonus);
             Strings.Combatresult = "You defeated the " + monsterName + " and gained " + charstats.monsterbonus + " XP!";

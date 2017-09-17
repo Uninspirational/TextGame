@@ -18,6 +18,7 @@ public class Adv16 extends AppCompatActivity {
         text1.setText(Strings.line21);
 
         final Button button1 = (Button) findViewById(R.id.Adv16button1);
+        button1.setText("Continue");
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

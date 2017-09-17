@@ -5,7 +5,7 @@ package com.helloworld.textgame;
  */
 
 public class charstats {
-    public static int attack = 1;
+    public static int attack = 1000;
     public static int defense = 1;
     public static int dexterity = 1;
     public static int health = 10;

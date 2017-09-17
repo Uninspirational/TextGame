@@ -16,7 +16,7 @@ public class Adv11 extends AppCompatActivity {
         setContentView(R.layout.activity_adv11);
 
         TextView text1 = (TextView) findViewById(R.id.Adv11text1);
-        text1.setText(Strings.line14);
+        text1.setText(Strings.line14());
 
         Button button1 = (Button) findViewById(R.id.Adv11button1);
         button1.setText("Continue");

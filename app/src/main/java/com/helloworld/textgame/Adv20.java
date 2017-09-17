@@ -16,7 +16,7 @@ public class Adv20 extends AppCompatActivity {
         setContentView(R.layout.activity_adv20);
 
         TextView text1 = (TextView) findViewById(R.id.Adv20text1);
-        text1.setText(Strings.line25);
+        text1.setText(Strings.line25());
         Button button1 = (Button) findViewById(R.id.Adv20button1);
         button1.setText("Fight for your life");
         button1.setOnClickListener(new View.OnClickListener() {

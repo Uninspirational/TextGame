@@ -27,6 +27,10 @@ public class Adv18 extends AppCompatActivity {
                 // Code here executes on main thread after user presses button
                 startActivity(new Intent(Adv18.this, Adv19.class));
                 charstats.upXP(1000000);
+                charstats.upAttack(1000);
+                charstats.upDefense(1000);
+                charstats.upHealth(1000);
+                charstats.upDexterity(1000);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {

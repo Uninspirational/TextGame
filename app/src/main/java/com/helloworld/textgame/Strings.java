@@ -10,9 +10,9 @@ public class Strings {
     public static String line1 = "You are a new knight seeking to establish the kingdom.\n" +
             "You'll first start off weak, but as kill monsters and acquire equipment, you'll become stronger.\n" +
             "At the end, if you're strong enough, you'll challenge and defeat the evil dragon threatening the kingdom.\n" +
-            "In combat, press Attack to attack" +
-            "press Dodge to dodge their attack" +
-            "press Defend to reduce damage and heal" +
+            "In combat, press Attack to attack\n" +
+            "press Dodge to dodge their attack\n" +
+            "press Defend to reduce damage and heal\n" +
             "Best of luck, ";
     public static String line2 = "After just being knighted by the king, you decide to visit the local bartender for a drink.\n" +
             "You enter the bar and sit down.\n" +
@@ -86,12 +86,16 @@ public class Strings {
     public static String line13 = "As soon as you make up your mind to find the dragon, you\n" +
             "start doubting your abilities. Would a knight only a few days old be able to take on a dragon?\n" +
             "You wonder if you should leave now or maybe wander around the city for a bit.";
-    public static String line14 = "You decide to leave the city because there's no way someone\n" +
-            "who just beat two adult men could possible lose to a dragon, right?\n" +
-            "You use the same trusty method of sticking to a direction to eventually\n" +
-            "end up at the dark forest surrounding the city.\n" +
-            "You know you'll be attacked by a fierce horde of monsters along the way\n" +
-            "but surely they'd be no match for a mighty knight such as yourself," + charname;
+    public static String line14()
+
+    {
+        return "You decide to leave the city because there's no way someone\n" +
+                "who just beat two adult men could possible lose to a dragon, right?\n" +
+                "You use the same trusty method of sticking to a direction to eventually\n" +
+                "end up at the dark forest surrounding the city.\n" +
+                "You know you'll be attacked by a fierce horde of monsters along the way\n" +
+                "but surely they'd be no match for a mighty knight such as yourself," + Strings.charname;
+    }
     public static String line15 = "You decide to wander the city for a bit and hopefully pick\n" +
             "up a few pieces of equipment along the way that you might be able to arm yourself.\n" +
             "Once you're properly suited up you'd be invincible.";
@@ -103,22 +107,28 @@ public class Strings {
             "are extremely exhausted and decide to take a rest.\n\n" +
             "You wake up refreshed on the mossy forest bed.\n" +
             "You've never slept out in the forest before, but it's pretty nice." +
-            "Now that your strength is back, what will you do now?";
+            "Now that your strength is back, what will you do now?\n" +
+            "Sleep, then approach the dragon\n" +
+            "Wander";
     public static String line18 = "Who knows why you always choose to wander when you get lost everytime?\n" +
             "Where would you like to go today?\n" +
             "1. Towards those bushes\n " +
             "2. Towards more trees\n" +
             "3. Towards that dragon that smells like a cave";
-    public static String line19 = "Well, you approached the dragon.\n" +
-            "Now that it's noticed you, there's only one choice.\n" +
-            "You can fight and die, or you can just die";
-    public static String line20 = "The Dragon grumbles, \"Who wakes me from my pleasant dream?\"" +
-            "\"It is I, " + charname + " the knight!\" you scream at the top of your lungs.\n" +
-            "It seems the dragon is hard of hearing, because it looks at you as though" +
-            "you were an insignificant ant not worth the time.\n" +
-            "It just goes back to sleep." +
-            "\n\n" +
-            "Infuriated by this rude act, you attack the mythical beast.";
+    public static String line19() {
+        return "Well, you approached the dragon.\n" +
+                "Now that it's noticed you, there's only one choice.\n" +
+                "You can fight and die, or you can just die";
+    }
+    public static String line20() {
+        return "The Dragon grumbles, \"Who wakes me from my pleasant dream?\"" +
+                "\"It is I, " + Strings.charname + " the knight!\" you scream at the top of your lungs.\n" +
+                "It seems the dragon is hard of hearing, because it looks at you as though" +
+                "you were an insignificant ant not worth the time.\n" +
+                "It just goes back to sleep." +
+                "\n\n" +
+                "Infuriated by this rude act, you attack the mythical beast.";
+    }
     public static String line21 = "It looks like the dragon has FINALLY noticed your existance!.\n" +
             "It flies away to find somewhere quieter to sleep.\n" +
             "It looks like it took absolutely no damage from your attacks.";
@@ -135,17 +145,22 @@ public class Strings {
             "What do you do?\n" +
             "1. Eat the egg\n" +
             "2. Steal the treasure.";
-    public static String line24 = "You cracked open the egg with your sword and drank the liquid egg inside.\n" +
-            "You might get salmonella later, but for now, you've gained 1,000,000 XP.\n\n" +
-            "The dragon heard the clanging of the sword on eggshell and returned as fast as it could," +
-            "\"Who dares commits such a sin against your god?\" grieves the dragon." +
-            "It is I, " + charname + " the knight!\n" +
-            "\"Well, knight, then die.\"";
-    public static String line25 = "You couldn't resist the temptation of all the money and hurriedly begin filling every empty" +
-            "pocket and bag with gold coins. Of course this makes an insanely loud clamour and the dragon returns." +
-            "\"Who dares commit such a sin against your god?\" roars the dragon." +
-            "It is I, " + charname + " the knight!\"" +
-            "\"Well " + charname + " the thief, prepare to meet your demise!.\"";
+    public static String line24() {
+        return "You cracked open the egg with your sword and drank the liquid egg inside.\n" +
+                "You might get salmonella later, but for now, you've gained 1,000,000 XP" +
+                " and a 1000 boost in every stat\n\n" +
+                "The dragon heard the clanging of the sword on eggshell and returned as fast as it could," +
+                "\"Who dares commits such a sin against your god?\" grieves the dragon." +
+                "It is I, " + Strings.charname + " the knight!\n" +
+                "\"Well, knight, then die.\"";
+    }
+    public static String line25() {
+        return "You couldn't resist the temptation of all the money and hurriedly begin filling every empty" +
+                "pocket and bag with gold coins. Of course this makes an insanely loud clamour and the dragon returns." +
+                "\"Who dares commit such a sin against your god?\" roars the dragon." +
+                "It is I, " + Strings.charname + " the knight!\"" +
+                "\"Well " + Strings.charname + " the thief, prepare to meet your demise!.\"";
+    }
     public static String line26 = "Congratulations, you have defeated the dragon and can claim its treasure as yours.\n" +
             "You have become the most powerful person to ever exist.\n" +
             "Surely no one can ever challenge you,\n" +
@@ -164,9 +179,11 @@ public class Strings {
             "She politely excuses herself and leaves the inn.\n" +
             "You watch her make a right.";
     public static String failedTask5 = "Looks like I never used this string huh";
-    public static String failedTask6 = "You become hopelessly lost and instead end up in front of the forest.\n" +
-            "No one knows how someone could be this bad with directions but\n" +
-            "here he is, " + charname + " the knight";
+    public static String failedTask6() {
+        return "You become hopelessly lost and instead end up in front of the forest.\n" +
+                "No one knows how someone could be this bad with directions but\n" +
+                "here he is, " + Strings.charname + " the knight";
+    }
     public static String Task1 = "Looks like you went the right way.\n" +
             "You soon come across the pier, and after asking around, you quickly locate the lost casket of beer.\n" +
             "It takes you awhile to carry heavy object back to the bar.\n" +
@@ -242,8 +259,9 @@ public class Strings {
     }
 
     public static String name() {
-        String s = line1 + charname;
+        String s = line1 + " " + charname;
         return s;
     }
+
 }
 

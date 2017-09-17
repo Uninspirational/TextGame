@@ -27,8 +27,9 @@ public class Adv19 extends AppCompatActivity {
         builder1.show();
 
         TextView text1 = (TextView) findViewById(R.id.Adv19text1);
-        text1.setText(Strings.line24);
+        text1.setText(Strings.line24());
         Button button1 = (Button) findViewById(R.id.Adv19button1);
+        button1.setText("Continue");
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
