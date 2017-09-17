@@ -10,6 +10,9 @@ public class Strings {
     public static String line1 = "You are a new knight seeking to establish the kingdom.\n" +
             "You'll first start off weak, but as kill monsters and acquire equipment, you'll become stronger.\n" +
             "At the end, if you're strong enough, you'll challenge and defeat the evil dragon threatening the kingdom.\n" +
+            "In combat, press Attack to attack" +
+            "press Dodge to dodge their attack" +
+            "press Defend to reduce damage and heal" +
             "Best of luck, ";
     public static String line2 = "After just being knighted by the king, you decide to visit the local bartender for a drink.\n" +
             "You enter the bar and sit down.\n" +
