@@ -64,17 +64,17 @@ public class Combat extends AppCompatActivity {
 
                 if(calc.monsterdefended) {
                     heal = calc.heal(charstats.monsterdefense);
-                    temp = calc.defensedamage(charstats.monsterdefense, charstats.attack);
-                    charstats.monsterhealth -= temp + 3;
+                    temp = 3 + calc.defensedamage(charstats.monsterdefense, charstats.attack);
+                    charstats.monsterhealth -= temp;
                     charstats.mheal(heal);
                     Strings.Combatresult = "" + "The " + Strings.monsterName + " defended and took " + temp + " damage!\n" +
                             "It gained " + heal + " hp for defending!\n";
                 }
 
                 else if(calc.monsterdodged) {
-                    temp = calc.attackdamage(charstats.attack, 5);
+                    temp = calc.attackdamage(charstats.attack, 5) * 2;
                     if(!calc.trydodge(charstats.monsterdexterity, charstats.attack)) {
-                        charstats.monsterhealth -= temp * 2;
+                        charstats.monsterhealth -= temp;
                         Strings.Combatresult = ("" + "The " + Strings.monsterName + " failed to dodge and took " + temp + " critical damage!\n");
 
                     }
@@ -84,8 +84,8 @@ public class Combat extends AppCompatActivity {
 
                 }
                 else  {
-                    temp = calc.attackdamage(charstats.attack, 5);
-                    charstats.monsterhealth -= temp + 3;
+                    temp = 3 + calc.attackdamage(charstats.attack, 5);
+                    charstats.monsterhealth -= temp;
                     Strings.Combatresult = ("" + "The " + Strings.monsterName + " took " + temp + " damage!\n");
                 }
                 if (calc.monsterattacked) {
